@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rsaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2942" />
+      <stop offset="100%" stop-color="#1e4d79" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c59b27" />
+      <stop offset="100%" stop-color="#e5be4a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Hexagonal Shield / Crest -->
+    <polygon points="40,2 78,22 78,62 40,82 2,62 2,22" fill="url(#rsaGrad)" stroke="url(#goldGrad)" stroke-width="3" />
+    <polygon points="40,8 72,25 72,59 40,76 8,59 8,25" fill="#ffffff" fill-opacity="0.05" />
+    
+    <!-- Balance Scales / Pillar Emblem -->
+    <path d="M40,16 L40,66 M24,28 L56,28 M24,28 L18,44 M56,28 L62,44" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- Scale Pans -->
+    <path d="M14,44 Q18,50 22,44 Z" fill="url(#goldGrad)" />
+    <path d="M58,44 Q62,50 66,44 Z" fill="url(#goldGrad)" />
+    <!-- Pedestal Base -->
+    <rect x="28" y="65" width="24" height="4" rx="2" fill="url(#goldGrad)" />
+    
+    <!-- Star accent -->
+    <circle cx="40" cy="22" r="2.5" fill="#ffffff" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(105, 12)">
+    <!-- Firm Name -->
+    <text x="0" y="32" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="28" font-weight="800" fill="#0f2942" letter-spacing="1.5">
+      RSAINI &amp; ASSOCIATES
+    </text>
+    
+    <!-- Subtitle / Profession -->
+    <text x="1" y="52" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#c59b27" letter-spacing="3.2">
+      PRACTICING COMPANY SECRETARIES
+    </text>
+
+    <!-- Tagline -->
+    <text x="1" y="68" font-family="'Inter', 'Segoe UI', sans-serif" font-size="9.5" font-weight="500" fill="#64748b" letter-spacing="0.8">
+      Secretarial Audit • Corporate Legal Advisory • ROC Compliances • Due Diligence
+    </text>
+  </g>
+
+  <!-- Accent Divider Line -->
+  <line x1="105" y1="78" x2="470" y2="78" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round" />
+</svg>

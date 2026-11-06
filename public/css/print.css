@@ -1,0 +1,94 @@
+/* A4 Print and PDF Stylesheet for RSaini & Associates */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 12mm 12mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11px !important;
+  }
+
+  /* Hide everything except the active printable container */
+  .sidebar,
+  .top-navbar,
+  .filter-bar,
+  .modal-header,
+  .modal-footer,
+  .btn,
+  .toast-container,
+  .no-print {
+    display: none !important;
+  }
+
+  .app-container,
+  .main-wrapper,
+  .content-area,
+  .modal-backdrop,
+  .modal-content,
+  .modal-body {
+    position: static !important;
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    background: transparent !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .invoice-paper-preview {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Pre-printed stationery mode: hide header and footer */
+  body.preprinted-mode .inv-letterhead-header {
+    visibility: hidden !important;
+    height: 35mm !important;
+    margin-bottom: 5mm !important;
+  }
+
+  body.preprinted-mode .inv-terms-box,
+  body.preprinted-mode .inv-firm-contacts {
+    display: none !important;
+  }
+
+  /* Table borders in print */
+  .inv-table th {
+    background-color: #0f2942 !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .inv-total-row.grand-total {
+    background-color: #0f2942 !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .inv-table th,
+  .inv-table td {
+    border: 1px solid #333333 !important;
+  }
+
+  /* Page breaks */
+  .page-break {
+    page-break-after: always;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+}

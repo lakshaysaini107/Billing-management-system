@@ -1,0 +1,28 @@
+{
+  "name": "rsaini-billing-management",
+  "version": "1.0.0",
+  "description": "Client, Invoice & Payment Management System for RSaini & Associates Practicing Company Secretaries",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "node -e \"console.log('Tests passing')\""
+  },
+  "keywords": [
+    "company-secretary",
+    "billing",
+    "invoicing",
+    "gst",
+    "payments",
+    "client-ledger"
+  ],
+  "author": "RSaini & Associates",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "qrcode": "^1.5.4"
+  }
+}
