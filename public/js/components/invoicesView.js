@@ -212,3 +212,4 @@ const InvoicesView = {
     Utils.exportToCsv(`RSA_Invoice_Register_${new Date().toISOString().split('T')[0]}.csv`, rows);
   }
 };
+

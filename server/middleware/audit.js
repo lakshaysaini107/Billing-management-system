@@ -22,3 +22,4 @@ function logAudit(req, action, entityType, entityId, details) {
 }
 
 module.exports = { logAudit };
+

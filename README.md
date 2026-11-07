@@ -58,3 +58,4 @@ The application will start on **`http://localhost:3000`**.
 - **Frontend**: Clean Single Page Application (SPA) with responsive dashboard, real-time recalculation engine, A4 print stylesheet (`print.css`), and dynamic modals.
 - **Database**: SQLite database stored at `data/rsa_billing.db` (auto-created and auto-seeded with realistic PCS demonstration records).
 - **Print / PDF**: Direct browser vector print (`window.print()`) calibrated to standard A4 (210mm x 297mm) paper, with instant toggle for pre-printed stationery.
+

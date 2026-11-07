@@ -638,3 +638,4 @@ module.exports = {
   hashPassword,
   verifyPassword
 };
+

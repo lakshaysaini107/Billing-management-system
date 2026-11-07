@@ -99,3 +99,4 @@ const AuthView = {
     document.getElementById('login-password').value = password;
   }
 };
+

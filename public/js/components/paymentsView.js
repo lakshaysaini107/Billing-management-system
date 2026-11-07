@@ -474,3 +474,4 @@ const PaymentsView = {
     Utils.exportToCsv(`RSA_Collections_Register_${new Date().toISOString().split('T')[0]}.csv`, rows);
   }
 };
+

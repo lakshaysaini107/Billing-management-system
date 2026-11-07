@@ -145,3 +145,4 @@ const Toast = {
   warning(msg) { this.show(msg, 'warning', 4500); },
   info(msg) { this.show(msg, 'info'); }
 };
+

@@ -45,3 +45,4 @@ async function generateUpiQr({ upiId, payeeName, amount, invoiceNo }) {
 }
 
 module.exports = { generateUpiQr };
+
