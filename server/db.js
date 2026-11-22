@@ -7,7 +7,7 @@ const path = require('node:path');
 const fs = require('node:fs');
 const crypto = require('node:crypto');
 
-const DB_DIR = path.join(__dirname, '..', 'data');
+const DB_DIR = process.env.DB_DIR || path.join(__dirname, '..', 'data');
 if (!fs.existsSync(DB_DIR)) {
   fs.mkdirSync(DB_DIR, { recursive: true });
 }
