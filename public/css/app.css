@@ -68,11 +68,25 @@ body {
 }
 
 .sidebar-header {
-  padding: 20px 16px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  min-height: 84px;
+}
+
+.sidebar-header img {
+  height: 56px;
+  max-height: 60px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-header img:hover {
+  transform: scale(1.02);
 }
 
 .sidebar-brand-icon {
