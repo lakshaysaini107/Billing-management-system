@@ -46,8 +46,8 @@ app.use('/api/audit', auditRoutes);
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'online',
-    practice: 'RSaini & Associates',
-    system: 'Client, Invoice & Payment Management System',
+    practice: 'BillFlow',
+    system: 'BillFlow - Client, Invoice & Payment Management System',
     timestamp: new Date().toISOString()
   });
 });
@@ -60,8 +60,7 @@ app.use((req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log('================================================================');
-  console.log('  RSAINI & ASSOCIATES - PRACTICING COMPANY SECRETARIES');
-  console.log('  Client, Invoice & Payment Management System (v1.0 MVP)');
+  console.log('  BILLFLOW - Client, Invoice & Payment Management System');
   console.log('================================================================');
   console.log(`  Server running at: http://localhost:${PORT}`);
   console.log(`  Default Practice Owner: admin / admin123`);

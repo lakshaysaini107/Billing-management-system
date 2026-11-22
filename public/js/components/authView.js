@@ -8,12 +8,11 @@ const AuthView = {
         <div style="background: #ffffff; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35); width: 100%; max-width: 440px; overflow: hidden;">
           
           <div style="background: #ffffff; padding: 32px 32px 20px 32px; text-align: center; border-bottom: 1px solid #f1f5f9;">
-            <div style="width: 70px; height: 70px; margin: 0 auto 16px auto; background: linear-gradient(135deg, #c59b27, #e5be4a); border-radius: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(197, 155, 39, 0.3);">
-              <span style="font-size: 28px; font-weight: 800; color: #0f2942; font-family: 'Cinzel', serif;">RSA</span>
+            <div style="margin-bottom: 12px; display: flex; justify-content: center;">
+              <img src="/assets/billflow-logo.png" style="height: 60px; max-width: 240px; object-fit: contain;" alt="BillFlow Logo" />
             </div>
-            <h1 style="font-size: 20px; font-weight: 800; color: #0f2942; letter-spacing: 0.5px; font-family: 'Cinzel', serif;">RSAINI &amp; ASSOCIATES</h1>
-            <p style="font-size: 11.5px; font-weight: 700; color: #c59b27; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px;">Practicing Company Secretaries</p>
-            <p style="font-size: 12px; color: #64748b; margin-top: 6px;">Client, Invoice &amp; Payment Management System</p>
+            <p style="font-size: 13px; font-weight: 600; color: #0284c7; letter-spacing: 0.5px; margin-top: 2px;">Smart Invoicing &amp; Collections Portal</p>
+            <p style="font-size: 11.5px; color: #64748b; margin-top: 4px;">Client, Invoice &amp; Payment Management System</p>
           </div>
 
           <div style="padding: 28px 32px;">

@@ -118,12 +118,8 @@ const InvoiceModal = {
         <div class="inv-letterhead-header" style="${hideLetterhead ? 'visibility:hidden; height:35mm; margin-bottom:5mm;' : ''}">
           <div style="display:flex; gap:16px; align-items:center;">
             <!-- Firm Emblem / Logo -->
-            <div style="width:64px; height:64px; flex-shrink:0;">
-              ${settings.logo_url ? `
-                <img src="${settings.logo_url}" style="width:100%; height:100%; object-fit:contain;" alt="Logo" />
-              ` : `
-                <img src="/assets/logo.svg" style="width:100%; height:100%; object-fit:contain;" alt="RSA Logo" />
-              `}
+            <div style="height:55px; max-width:160px; flex-shrink:0; display:flex; align-items:center;">
+              <img src="${settings.logo_url || '/assets/billflow-logo.png'}" style="max-height:100%; max-width:100%; object-fit:contain;" alt="Logo" />
             </div>
 
             <div class="inv-firm-branding">

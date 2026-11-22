@@ -1,7 +1,11 @@
-# RSaini & Associates — Client, Invoice & Payment Management System
-**Practicing Company Secretary (PCS) Practice Management System (v1.0 MVP)**
+<p align="center">
+  <img src="public/assets/billflow-logo.png" alt="BillFlow Logo" width="380" />
+</p>
 
-A specialised, centralized billing, client master record, and payment tracking application built for **RSaini & Associates**, Practicing Company Secretaries, New Delhi.
+# BillFlow — Client, Invoice & Payment Management System
+**Smart Practice Billing & Revenue Management Platform (v1.0 MVP)**
+
+A specialised, centralized billing, client master record, and payment tracking application built for professional practices.
 
 ---
 

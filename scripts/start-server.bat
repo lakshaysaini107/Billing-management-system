@@ -1,10 +1,9 @@
 @echo off
-title RSaini & Associates - Practice Billing System
+title BillFlow - Client, Invoice & Payment Management System
 cd /d "%~dp0\.."
 
 echo ================================================================
-echo   RSAINI & ASSOCIATES - PRACTICING COMPANY SECRETARIES
-echo   Client, Invoice & Payment Management System
+echo   BILLFLOW - CLIENT, INVOICE & PAYMENT MANAGEMENT SYSTEM
 echo ================================================================
 echo.
 

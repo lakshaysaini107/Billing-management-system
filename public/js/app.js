@@ -32,14 +32,8 @@ const App = {
         
         <!-- Sidebar Navigation -->
         <aside class="sidebar no-print">
-          <div class="sidebar-header">
-            <div class="sidebar-brand-icon">
-              <span>RSA</span>
-            </div>
-            <div class="sidebar-brand-text">
-              <h1>RSAINI &amp; ASSOC.</h1>
-              <p>PCS PRACTICE PORTAL</p>
-            </div>
+          <div class="sidebar-header" style="background:#ffffff; padding:12px 16px; border-bottom:1px solid #e2e8f0; display:flex; align-items:center; justify-content:center;">
+            <img src="/assets/billflow-logo.png" style="height:34px; width:auto; max-width:100%; object-fit:contain;" alt="BillFlow" />
           </div>
 
           <nav class="sidebar-nav">

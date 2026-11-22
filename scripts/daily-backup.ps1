@@ -1,4 +1,4 @@
-# RSaini & Associates - Automated Database Backup Script (PowerShell)
+# BillFlow - Automated Database Backup Script (PowerShell)
 $ErrorActionPreference = "Stop"
 
 $ProjectRoot = Resolve-Path (Join-Path $PSScriptRoot "..")

@@ -195,8 +195,8 @@ function initSchema() {
 function seedDefaultData() {
   // 1. Seed Settings
   const defaultSettings = {
-    firm_name: 'RSaini & Associates',
-    firm_tagline: 'Practicing Company Secretaries',
+    firm_name: 'BillFlow',
+    firm_tagline: 'Client, Invoice & Payment Management',
     practitioner_name: 'CS R. Saini',
     qualifications: 'M.Com, FCS, ACMA, LL.B',
     membership_no: 'FCS 10842',
@@ -209,30 +209,31 @@ function seedDefaultData() {
     state_code: '07',
     pincode: '110001',
     phone: '+91 98110 00000',
-    email: 'contact@rsainiassociates.com',
-    website: 'www.rsainiassociates.com',
+    email: 'contact@billflow.in',
+    website: 'www.billflow.in',
     pan: 'AAAAA0000A',
     gstin: '07AAAAA0000A1Z5',
     bank_name: 'HDFC Bank',
-    account_name: 'RSaini and Associates',
+    account_name: 'BillFlow Accounts',
     account_number: '50200012345678',
     account_type: 'Current Account',
     ifsc_code: 'HDFC0000123',
     branch: 'Connaught Place, New Delhi - 110001',
-    upi_id: 'rsaini@hdfcbank',
-    invoice_prefix: 'RSA/',
+    upi_id: 'billflow@hdfcbank',
+    invoice_prefix: 'BF/',
     fy_format: 'YY-YY',
     sequence_padding: '3',
     next_sequence: '1',
     default_tax_rate: '18',
     default_sac_code: '998242',
+    logo_url: '/assets/billflow-logo.png',
     print_letterhead_artwork: '1', // 1 = show digital letterhead, 0 = pre-printed blank stationery mode
     invoice_terms: `1. Payment is strictly due within 15 days of invoice date.
 2. Please quote Invoice Number as payment reference in NEFT / RTGS / UPI transfers.
 3. Official Receipt will be issued automatically upon realisation of funds.
-4. Cheque / Demand Draft to be drawn in favour of 'RSaini and Associates'.
+4. Cheque / Demand Draft to be drawn in favour of 'BillFlow'.
 5. All corporate disputes are subject to the exclusive jurisdiction of courts in New Delhi.`,
-    authorized_signatory_label: 'For RSaini & Associates\nPracticing Company Secretaries\n\n\nAuthorised Signatory'
+    authorized_signatory_label: 'For BillFlow\nAuthorised Signatory'
   };
 
   const getSettingStmt = db.prepare('SELECT value FROM settings WHERE key = ?');
