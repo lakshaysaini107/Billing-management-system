@@ -351,7 +351,7 @@ const PaymentsView = {
               <div style="border-bottom:2px solid #c59b27; padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">
                 <div>
                   <div style="font-family:'Cinzel', serif; font-size:22px; font-weight:800; color:#0f2942;">
-                    ${Utils.escapeHtml(settings.firm_name || 'RSAINI & ASSOCIATES')}
+                    ${Utils.escapeHtml(settings.firm_name || 'BillFlow')}
                   </div>
                   <div style="font-size:11px; font-weight:700; color:#c59b27; letter-spacing:2px; text-transform:uppercase;">
                     PRACTICING COMPANY SECRETARIES
@@ -430,7 +430,7 @@ const PaymentsView = {
                 </div>
 
                 <div style="text-align:center; width:220px;">
-                  <div style="font-weight:700; color:#0f2942;">For ${Utils.escapeHtml(settings.firm_name || 'RSaini & Associates')}</div>
+                  <div style="font-weight:700; color:#0f2942;">For ${Utils.escapeHtml(settings.firm_name || 'BillFlow')}</div>
                   <div style="font-size:10px; color:#64748b;">Practicing Company Secretaries</div>
                   <div style="height:45px; border-bottom:1px solid #94a3b8; margin-bottom:4px;"></div>
                   <div style="font-weight:700; color:#0f2942; font-size:11px;">Authorised Signatory</div>

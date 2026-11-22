@@ -88,7 +88,7 @@ const SettingsView = {
             <div class="form-row">
               <div class="form-group" style="flex: 2;">
                 <label class="form-label">Firm Name *</label>
-                <input type="text" id="set-firm_name" class="form-control" required value="${Utils.escapeHtml(s.firm_name || 'RSaini & Associates')}" />
+                <input type="text" id="set-firm_name" class="form-control" required value="${Utils.escapeHtml(s.firm_name || 'BillFlow')}" />
               </div>
               <div class="form-group" style="flex: 1.5;">
                 <label class="form-label">Tagline / Professional Specialty</label>
@@ -207,7 +207,7 @@ const SettingsView = {
               </div>
               <div class="form-group">
                 <label class="form-label">Beneficiary Account Name</label>
-                <input type="text" id="set-account_name" class="form-control" value="${Utils.escapeHtml(s.account_name || 'RSaini and Associates')}" />
+                <input type="text" id="set-account_name" class="form-control" value="${Utils.escapeHtml(s.account_name || 'BillFlow Accounts')}" />
               </div>
             </div>
 
@@ -233,7 +233,7 @@ const SettingsView = {
               </div>
               <div class="form-group" style="flex: 1.5;">
                 <label class="form-label">UPI ID for Direct Scanning (VPA) *</label>
-                <input type="text" id="set-upi_id" class="form-control" style="font-weight:700; color:#0284c7;" value="${Utils.escapeHtml(s.upi_id || 'rsaini@hdfcbank')}" placeholder="e.g. rsaini@hdfcbank" />
+                <input type="text" id="set-upi_id" class="form-control" style="font-weight:700; color:#0284c7;" value="${Utils.escapeHtml(s.upi_id || 'billflow@hdfcbank')}" placeholder="e.g. billflow@hdfcbank" />
               </div>
             </div>
 
