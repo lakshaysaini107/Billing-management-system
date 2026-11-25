@@ -1,9 +1,9 @@
 @echo off
-title BillFlow - Client, Invoice & Payment Management System
+title BillFlow - Client, Invoice and Payment Management System
 cd /d "%~dp0\.."
 
 echo ================================================================
-echo   BILLFLOW - CLIENT, INVOICE & PAYMENT MANAGEMENT SYSTEM
+echo   BILLFLOW - CLIENT, INVOICE AND PAYMENT MANAGEMENT SYSTEM
 echo ================================================================
 echo Working folder: %CD%
 echo.
@@ -11,7 +11,7 @@ echo.
 node -v >nul 2>&1
 if %errorlevel% neq 0 (
     echo [ERROR] Node.js is not installed or not in PATH.
-    echo Please install Node.js (version 22.5 or higher / v24 LTS) from https://nodejs.org
+    echo Please install Node.js v24 LTS from https://nodejs.org
     pause
     exit /b 1
 )
@@ -36,7 +36,7 @@ if not exist "node_modules\" (
 echo [STARTING] Starting BillFlow server on port 3000...
 echo Server running at: http://localhost:3000
 echo.
-echo Leave this window open (you can minimize it) while using BillFlow.
+echo Leave this window open - you can minimize it while using BillFlow.
 echo Press Ctrl+C to stop the server.
 echo.
 
