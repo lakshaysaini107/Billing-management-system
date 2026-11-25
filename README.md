@@ -61,5 +61,13 @@ The application will start on **`http://localhost:3000`**.
 - **Backend**: Node.js 24 with native `node:sqlite` (`DatabaseSync`), Express 5, CORS, Multer (logo uploads), and QRCode generator.
 - **Frontend**: Clean Single Page Application (SPA) with responsive dashboard, real-time recalculation engine, A4 print stylesheet (`print.css`), and dynamic modals.
 - **Database**: SQLite database stored at `data/rsa_billing.db` (auto-created and auto-seeded with realistic PCS demonstration records).
-- **Print / PDF**: Direct browser vector print (`window.print()`) calibrated to standard A4 (210mm x 297mm) paper, with instant toggle for pre-printed stationery.
+- **Print / PDF**: 1-click A4 PDF download (`html2pdf.bundle.min.js`), browser vector print (`window.print()`), and self-contained offline HTML export, with instant toggle for pre-printed stationery.
+
+---
+
+## 📖 Full Documentation, Backups & Maintenance
+
+For complete instructions on **transferring to another PC, multi-user LAN/Cloudflare setup, automated daily backups, disaster recovery, making changes, and troubleshooting**, see:
+
+👉 **[DOCUMENTATION.md](DOCUMENTATION.md)**
 
