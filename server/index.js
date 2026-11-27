@@ -5,6 +5,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('node:path');
+const os = require('node:os');
 
 // Initialize database
 require('./db');
@@ -57,12 +58,32 @@ app.use((req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
-// Start server
-app.listen(PORT, () => {
+function getLanUrls(port) {
+  const urls = [];
+  const interfaces = os.networkInterfaces();
+  for (const [name, addrs] of Object.entries(interfaces)) {
+    if (!addrs) continue;
+    for (const addr of addrs) {
+      if (addr.family === 'IPv4' && !addr.internal) {
+        urls.push({ name, url: `http://${addr.address}:${port}` });
+      }
+    }
+  }
+  return urls;
+}
+
+// Start server on all network interfaces (0.0.0.0) for LAN/Wi-Fi access
+app.listen(PORT, '0.0.0.0', () => {
   console.log('================================================================');
   console.log('  BILLFLOW - Client, Invoice & Payment Management System');
   console.log('================================================================');
-  console.log(`  Server running at: http://localhost:${PORT}`);
+  console.log(`  This PC:               http://localhost:${PORT}`);
+  const lanUrls = getLanUrls(PORT);
+  if (lanUrls.length > 0) {
+    lanUrls.forEach(item => {
+      console.log(`  Office Wi-Fi / LAN:    ${item.url}  (${item.name})`);
+    });
+  }
   console.log(`  Default Practice Owner: admin / admin123`);
   console.log(`  Default Billing Staff:  billing / billing123`);
   console.log('================================================================');
